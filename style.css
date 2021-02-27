@@ -1,0 +1,68 @@
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: cursive;
+}
+
+#mySearch {
+    width: 75%;
+    padding: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+input[type=text] {
+    border-top: 2px, blue;
+    /* transition: width 0.10s ease-in-out; */
+    /* may take transition line out it dont look good */
+    /* margin-left: 180px; */
+    /*
+     text-align: center; */
+
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+    font-family: cursive;
+}
+
+/* input[type=text]:focus {
+    width: 75%;
+} */
+
+#submit {
+    padding: 14px;
+    background-color: rgb(214, 235, 183);
+    border: none;
+}
+
+#myForm input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 80px;
+    padding: 10px
+}
+
+/* Style the form - display items horizontally */
+#myForm {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* links: flexbox:https://www.w3schools.com/css/css3_flexbox.asp
+how to create a responsive inline formhttps://www.w3schools.com/howto/howto_css_inline_form.asp */
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    #myForm input {
+        margin: 10px 0;
+    }
+
+    #myForm {
+        flex-direction: column;
+        align-items: stretch;
+        /* The stretch value stretches the flex items to fill the container (this is default): */
+    }
+}
